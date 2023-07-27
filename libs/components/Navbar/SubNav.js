@@ -13,7 +13,7 @@ const SimpleNav = () => {
   const [dropDown, setDropDown] = useState(false);
   return (
     <div>
-      <header className="p-5  bg-[#28afa8e5] text-white">
+      <header className="p-5  bg-[#1C2B35] text-white">
         <div className="w-[90%] mx-auto">
           <div className="container flex justify-between h-10 mx-auto  md:space-x-8">
             <ul className="items-stretch hidden space-x-3 md:flex justify-center ">
