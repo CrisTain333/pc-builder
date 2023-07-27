@@ -13,13 +13,13 @@ const SimpleNav = () => {
   const [dropDown, setDropDown] = useState(false);
   return (
     <div>
-      <header className="p-5  bg-[#1C2B35] text-white">
+      <header className="p-5  bg-[#28afa8e5] text-white">
         <div className="w-[90%] mx-auto">
           <div className="container flex justify-between h-10 mx-auto  md:space-x-8">
             <ul className="items-stretch hidden space-x-3 md:flex justify-center ">
               <li className="flex">
                 <div className="flex border-r-2 pr-2">
-                  <div className="flex w-60  items-center px-4 py-2 -mb-1 border-r-2 mr-2 border  justify-between  border-gray-600 mt-1 dropdown cursor-pointer">
+                  <div className="flex w-60  items-center px-4 py-2 -mb-1 border-r-1 mr-2 border  justify-between  border-white mt-1 dropdown cursor-pointer">
                     <div
                       onClick={() => setDropDown(!dropDown)}
                     >
