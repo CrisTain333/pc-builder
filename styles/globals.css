@@ -10,8 +10,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.scroll-hidden::-webkit-scrollbar {
-    height: 0px;
-    background: transparent;
-    /* make scrollbar transparent */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #ffffff;
+    /* // border: 1px solid #cacaca; */
+    box-shadow: inset 0 0 6px 262626;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #ff9900;
 }
