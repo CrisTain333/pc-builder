@@ -25,3 +25,19 @@
     border-radius: 3px;
     background-color: #28afa8;
 }
+
+@layer components {
+
+    /* blur */
+    .blur {
+        position: absolute;
+        width: 22rem;
+        height: 14rem;
+        border-radius: 50%;
+        background: #a6ddf0;
+        filter: blur(70px);
+    }
+
+
+
+}

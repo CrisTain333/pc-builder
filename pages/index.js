@@ -1,5 +1,6 @@
 import RootLayout from "@/libs/Layout/RootLayout";
 import Footer from "@/libs/components/Footer/Footer";
+import Banner from "@/libs/components/Home/Banner/Banner";
 import Navbar from "@/libs/components/Navbar/Navbar";
 import Head from "next/head";
 import React from "react";
@@ -11,7 +12,8 @@ const index = () => {
         <title>MasterBuild</title>
       </Head>
       <div className="text-center h-[100vh]">
-        <p className="text-6xl ">Hellos</p>
+        {/* Hero */}
+        <Banner />
       </div>
     </>
   );
