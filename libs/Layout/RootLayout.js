@@ -1,13 +1,23 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import SimpleNav from "../components/Navbar/SubNav";
 
 const RootLayout = ({ children }) => {
   return (
     <div className="">
-      <Navbar />
-      <div className="my-5 mt-10 md:mt-32">{children}</div>
-      <Footer />
+      <div>
+        <Navbar />
+        <div className="mt-14">
+          <div className="hidden md:block">
+            <SimpleNav />
+          </div>
+        </div>
+        <div className="w-[90%] mx-auto mt-20 md:mt-10">
+          {children}
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isLoaged, setIsLoag] = useState(true);
   return (
     <div className="fixed top-0 w-full z-50">
-      <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800 shadow-md">
+      <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-2 dark:bg-gray-800 shadow-md">
         <nav
           className="max-w-[85rem] w-full mx-auto px-4 flex items-center justify-between"
           aria-label="Global"
