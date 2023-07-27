@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 import { IoIosBuild } from "react-icons/io";
 
 const Navbar = () => {
-  const [isLoaged, setIsLoag] = useState(false);
+  const [isLoaged, setIsLoag] = useState(true);
   return (
     <div className="fixed top-0 w-full z-50">
       <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800 shadow-md">
@@ -54,25 +54,24 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center justify-center space-x-3">
-            {isLoaged ? (
+            <Link href="/build-pc">
+              <Button
+                label={"Build Pc"}
+                icon={<IoIosBuild size={20} />}
+                className={
+                  "flex justify-center items-center bg-gradient-to-t from-[#28afa8]  px-3 md:px-6 transition-all py-2  md:py-3 text-base rounded-sm text-white to-[#4ce5e2]"
+                }
+                labelClass={"ml-2"}
+              />
+            </Link>
+            {isLoaged && (
               <Image
-                class=" h-10 w-10 rounded-full ring-2 ring-white dark:ring-gray-800"
+                class=" h-14 w-14 rounded-full ring-2 ring-[#28afa8] p-1 dark:ring-gray-800"
                 src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
                 alt="Image Description"
                 width={500}
                 height={500}
               />
-            ) : (
-              <>
-                <Button
-                  label={"Build Pc"}
-                  icon={<IoIosBuild size={20} />}
-                  className={
-                    "flex justify-center items-center bg-gradient-to-t from-[#28afa8]  px-3 md:px-6 transition-all py-2  md:py-3 text-base rounded-sm text-white to-[#4ce5e2]"
-                  }
-                  labelClass={"ml-2"}
-                />
-              </>
             )}
 
             {/* <span className="hidden w-px h-7 bg-gray-300 md:block"></span> */}
