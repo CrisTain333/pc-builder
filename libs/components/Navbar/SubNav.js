@@ -43,6 +43,7 @@ const SimpleNav = () => {
                       <div>
                         {dropDown ? (
                           <DropDown
+                            dropDown={dropDown}
                             categoriesData={
                               componentCategories
                             }
