@@ -1,13 +1,17 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import BrandImage from "../BrandImage/BrandImage";
+import Image from "next/image";
+import Button from "../Button/Button";
+import { IoIosBuild } from "react-icons/io";
 
 const Navbar = () => {
+  const [isLoaged, setIsLoag] = useState(false);
   return (
     <div className="fixed top-0 w-full z-50">
       <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800 shadow-md">
         <nav
-          className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+          className="max-w-[85rem] w-full mx-auto px-4 flex items-center justify-between"
           aria-label="Global"
         >
           <div className="flex items-center justify-between">
@@ -18,168 +22,60 @@ const Navbar = () => {
               <BrandImage
                 hight={100}
                 width={100}
-                className={"h-14  w-14"}
+                className={" h-14  w-14"}
               />
               <span className="text-2xl font-bold">
                 asterBuild
               </span>
             </Link>
-            <div className="sm:hidden">
-              <button
-                type="button"
-                className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
-                data-hs-collapse="#navbar-with-mega-menu"
-                aria-controls="navbar-with-mega-menu"
-                aria-label="Toggle navigation"
-              >
-                <svg
-                  className="hs-collapse-open:hidden w-4 h-4"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                  />
-                </svg>
-                <svg
-                  className="hs-collapse-open:block hidden w-4 h-4"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                </svg>
-              </button>
-            </div>
           </div>
-          <div
-            id="navbar-with-mega-menu"
-            className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
-          >
-            <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
-              <a
-                className="font-medium text-blue-500"
-                href="#"
-                aria-current="page"
+          <div className="hidden md:flex items-center justify-center">
+            <form className="flex items-center space-x-2 border rounded-sm p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 flex-none text-gray-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                Landing
-              </a>
-              <a
-                className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-                href="#"
-              >
-                Account
-              </a>
-              <a
-                className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-                href="#"
-              >
-                Work
-              </a>
-              <a
-                className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-                href="#"
-              >
-                Blog
-              </a>
-              <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none]">
-                <button
-                  id="hs-mega-menu-basic-dr"
-                  type="button"
-                  className="flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 "
-                >
-                  Dropdown
-                  <svg
-                    className="ml-2 w-2.5 h-2.5 text-gray-600"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    ></path>
-                  </svg>
-                </button>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              <input
+                className="w-full md:w-[40rem] outline-none appearance-none placeholder-gray-600 text-gray-600 p-1"
+                type="text"
+                placeholder="Search Products . . . . ."
+              />
+            </form>
+          </div>
 
-                <div
-                  className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5 hidden"
-                  // style=""
-                >
-                  <a
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                    href="#"
-                  >
-                    About
-                  </a>
-                  <div className="hs-dropdown relative [--strategy:static] sm:[--strategy:absolute] [--adaptive:none]">
-                    <button
-                      type="button"
-                      className="w-full flex justify-between w-full items-center text-sm text-gray-800 rounded-md py-2 px-3 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                    >
-                      Sub Menu
-                      <svg
-                        className="sm:-rotate-90 ml-2 w-2.5 h-2.5 text-gray-600"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                        ></path>
-                      </svg>
-                    </button>
+          <div className="flex items-center justify-center space-x-3">
+            {isLoaged ? (
+              <Image
+                class=" h-10 w-10 rounded-full ring-2 ring-white dark:ring-gray-800"
+                src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+                alt="Image Description"
+                width={500}
+                height={500}
+              />
+            ) : (
+              <>
+                <Button
+                  label={"Build Pc"}
+                  icon={<IoIosBuild size={20} />}
+                  className={
+                    "flex justify-center items-center bg-gradient-to-t from-[#28afa8]  px-3 md:px-6 transition-all py-2  md:py-3 text-base rounded-sm text-white to-[#4ce5e2]"
+                  }
+                  labelClass={"ml-2"}
+                />
+              </>
+            )}
 
-                    <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute sm:border before:-right-5 before:top-0 before:h-full before:w-5 top-0 right-full !mx-[10px]">
-                      <a
-                        className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                        href="#"
-                      >
-                        About
-                      </a>
-                      <a
-                        className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                        href="#"
-                      >
-                        Downloads
-                      </a>
-                      <a
-                        className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                        href="#"
-                      >
-                        Team Account
-                      </a>
-                    </div>
-                  </div>
-
-                  <a
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                    href="#"
-                  >
-                    Downloads
-                  </a>
-                  <a
-                    className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                    href="#"
-                  >
-                    Team Account
-                  </a>
-                </div>
-              </div>
-            </div>
+            {/* <span className="hidden w-px h-7 bg-gray-300 md:block"></span> */}
           </div>
         </nav>
       </header>
