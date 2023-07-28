@@ -4,7 +4,7 @@ export default function handler(req, res) {
       id: "1",
       Image:
         "https://www.startech.com.bd/image/cache/catalog/processor/amd/5600x/5600x-001-500x500.jpg",
-      "Product Name": "AMD Ryzen 5 5600X",
+      name: "AMD Ryzen 5 5600X",
       Category: "CPU Processor",
       Status: "In Stock",
       Price: 279.99,
@@ -40,7 +40,7 @@ export default function handler(req, res) {
 
       Image:
         "https://www.startech.com.bd/image/cache/catalog/motherboard/asus/rog-strix-b550-f-gaming/rog-strix-b550-f-gaming-500x500.jpg",
-      "Product Name": "ASUS ROG Strix B550-F Gaming",
+      name: "ASUS ROG Strix B550-F Gaming",
       Category: "Motherboard",
       Status: "In Stock",
       Price: 189.99,
@@ -78,7 +78,7 @@ export default function handler(req, res) {
       id: "13",
       Image:
         "https://www.startech.com.bd/image/cache/catalog/ram/team/delta-tuf/delta-tuf-001-500x500.jpg",
-      "Product Name": "Crucial Ballistix MAX",
+      name: "Crucial Ballistix MAX",
       Category: "RAM",
       Status: "In Stock",
       Price: 129.99,
@@ -114,7 +114,7 @@ export default function handler(req, res) {
       id: "15",
       Image:
         "https://www.startech.com.bd/image/cache/catalog/power-supply/corsair/rm750xwhite/corsair-rm-750-x-750-watt-80-plus-gold-certified-power-supply-white01-500x500.jpg",
-      "Product Name": "Corsair RM850x",
+      name: "Corsair RM850x",
       Category: "Power Supply",
       Status: "In Stock",
       Price: 149.99,
@@ -149,7 +149,7 @@ export default function handler(req, res) {
       id: "20",
       Image:
         "https://www.startech.com.bd/image/cache/catalog/monitor/asus/rog-swift-360hz-pg259qn/rog-swift-360hz-pg259qn-500x500.jpg",
-      "Product Name": "ASUS ROG Swift PG279Q",
+      name: "ASUS ROG Swift PG279Q",
       Category: "Monitor",
       Status: "In Stock",
       Price: 599.99,
@@ -186,7 +186,7 @@ export default function handler(req, res) {
       id: "28",
       Image:
         "https://www.startech.com.bd/image/cache/catalog/mouse/razer/deathadder-v2/deathadder-v2-500x500.jpg",
-      "Product Name": "Razer DeathAdder V2 Gaming Mouse",
+      name: "Razer DeathAdder V2 Gaming Mouse",
       Category: "Others",
       Status: "In Stock",
       Price: 69.99,

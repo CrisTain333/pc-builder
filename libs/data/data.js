@@ -2,7 +2,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/processor/amd/5600x/5600x-001-500x500.jpg",
-    "Product Name": "AMD Ryzen 5 5600X",
+    name: "AMD Ryzen 5 5600X",
     Category: "CPU Processor",
     Status: "In Stock",
     Price: 279.99,
@@ -35,7 +35,8 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/processor/Intel/i9-11900k/i9-11900k-500x500.jpg",
-    "Product Name": "Intel Core i9-11900K",
+
+    name: "Intel Core i9-11900K",
     Category: "CPU Processor",
     Status: "In Stock",
     Price: 519.99,
@@ -69,7 +70,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/processor/Intel/i5-11600k/i5-11600k-500x500.jpg",
-    "Product Name": "Intel Core i5-11600K",
+    name: "Intel Core i5-11600K",
     Category: "CPU Processor",
     Status: "In Stock",
     Price: 269.99,
@@ -102,7 +103,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/processor/amd/ryzen-7-5800x/ryzen-7-5800x-01-500x500.jpg",
-    "Product Name": "AMD Ryzen 7 5800X",
+    name: "AMD Ryzen 7 5800X",
     Category: "CPU Processor",
     Status: "In Stock",
     Price: 369.99,
@@ -136,7 +137,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/processor/amd/ryzen-9-5900x/ryzen-9-5900x-001-500x500.jpg",
-    "Product Name": "AMD Ryzen 9 5950X",
+    name: "AMD Ryzen 9 5950X",
     Category: "CPU Processor",
     Status: "In Stock",
     Price: 749.99,
@@ -170,7 +171,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/motherboard/asus/rog-strix-b550-f-gaming/rog-strix-b550-f-gaming-500x500.jpg",
-    "Product Name": "ASUS ROG Strix B550-F Gaming",
+    name: "ASUS ROG Strix B550-F Gaming",
     Category: "Motherboard",
     Status: "In Stock",
     Price: 189.99,
@@ -205,7 +206,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/motherboard/gigabyte/b550-aorus-elite-ax/b550-aorus-elite-ax-500x500.jpg",
-    "Product Name": "GIGABYTE B550 AORUS Elite",
+    name: "GIGABYTE B550 AORUS Elite",
     Category: "Motherboard",
     Status: "In Stock",
     Price: 159.99,
@@ -241,7 +242,7 @@ const Data = [
   {
     Image:
       "https://startech.com.bd/image/cache/catalog/motherboard/msi/mpg-z590-gaming-edge-wifi/mpg-z590-gaming-edge-wifi-500x500.jpg",
-    "Product Name": "MSI MPG Z590 Gaming Edge WiFi",
+    name: "MSI MPG Z590 Gaming Edge WiFi",
     Category: "Motherboard",
     Status: "In Stock",
     Price: 249.99,
@@ -278,7 +279,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/motherboard/asrock/b450-steel-legend/b450-steel-500x500.jpg",
-    "Product Name": "ASRock B450M Steel Legend",
+    name: "ASRock B450M Steel Legend",
     Category: "Motherboard",
     Status: "In Stock",
     Price: 109.99,
@@ -314,7 +315,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/motherboard/asus/prime-x570-pro-csm/prime-x570-pro-csm-500x500.jpg",
-    "Product Name": "ASUS Prime X570-Pro",
+    name: "ASUS Prime X570-Pro",
     Category: "Motherboard",
     Status: "In Stock",
     Price: 289.99,
@@ -350,7 +351,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/ram/cosair/vengeance-rgb-pro-ram-kit-white/vengeance-rgb-pro-ram-kit-white-01-500x500.jpg",
-    "Product Name": "Corsair Vengeance RGB Pro",
+    name: "Corsair Vengeance RGB Pro",
     Category: "RAM",
     Status: "In Stock",
     Price: 89.99,
@@ -384,7 +385,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/ram/gskill/ripjaws-v/ripjaws-v-001-500x500.jpg",
-    "Product Name": "G.SKILL Ripjaws V",
+    name: "G.SKILL Ripjaws V",
     Category: "RAM",
     Status: "In Stock",
     Price: 79.99,
@@ -417,7 +418,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/ram/team/delta-tuf/delta-tuf-001-500x500.jpg",
-    "Product Name": "Crucial Ballistix MAX",
+    name: "Crucial Ballistix MAX",
     Category: "RAM",
     Status: "In Stock",
     Price: 129.99,
@@ -452,7 +453,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/power-supply/revenger/vp-350/vp-350-01-500x500.webp",
-    "Product Name": "EVGA SuperNOVA 750 G3",
+    name: "EVGA SuperNOVA 750 G3",
     Category: "Power Supply",
     Status: "In Stock",
     Price: 129.99,
@@ -484,7 +485,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/power-supply/corsair/rm750xwhite/corsair-rm-750-x-750-watt-80-plus-gold-certified-power-supply-white01-500x500.jpg",
-    "Product Name": "Corsair RM850x",
+    name: "Corsair RM850x",
     Category: "Power Supply",
     Status: "In Stock",
     Price: 149.99,
@@ -518,7 +519,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/power-supply/corsair/cv650/cv650-1-500x500.jpg",
-    "Product Name": "Seasonic Focus GX-650",
+    name: "Seasonic Focus GX-650",
     Category: "Power Supply",
     Status: "In Stock",
     Price: 109.99,
@@ -551,7 +552,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/ssd/samsung/970-evo-plus-1tb/970-evo-plus-1tb-500x500.jpg",
-    "Product Name": "Samsung 970 EVO Plus",
+    name: "Samsung 970 EVO Plus",
     Category: "Storage Device",
     Status: "In Stock",
     Price: 129.99,
@@ -585,7 +586,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/HDD/WD20EZRZ%202TB-500x500.jpg",
-    "Product Name": "Western Digital Blue 2TB",
+    name: "Western Digital Blue 2TB",
     Category: "Storage Device",
     Status: "In Stock",
     Price: 79.99,
@@ -617,7 +618,7 @@ const Data = [
   {
     Image:
       "https://waz.vteximg.com.br/arquivos/ids/168583-500-500/114560-1-HD_1_000GB_1TB_7_200RPM_SATA3_3_5pol_Seagate_FireCuda_SSHD_ST1000DX002_114560-5.jpg?v=636431930605170000",
-    "Product Name": "Seagate FireCuda 2TB SSHD",
+    name: "Seagate FireCuda 2TB SSHD",
     Category: "Storage Device",
     Status: "In Stock",
     Price: 99.99,
@@ -651,7 +652,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/monitor/asus/rog-swift-360hz-pg259qn/rog-swift-360hz-pg259qn-500x500.jpg",
-    "Product Name": "ASUS ROG Swift PG279Q",
+    name: "ASUS ROG Swift PG279Q",
     Category: "Monitor",
     Status: "In Stock",
     Price: 599.99,
@@ -686,7 +687,7 @@ const Data = [
   {
     Image:
       "https://startech.com.bd/image/cache/catalog/monitor/lg-monitor/27ul850-w/27ul850-w-500x500.jpg",
-    "Product Name": "LG 27UK850-W",
+    name: "LG 27UK850-W",
     Category: "Monitor",
     Status: "In Stock",
     Price: 449.99,
@@ -722,7 +723,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/monitor/acer/nitro-vg270/nitro-vg270-01-500x500.webp",
-    "Product Name": "Acer Nitro XV273K",
+    name: "Acer Nitro XV273K",
     Category: "Monitor",
     Status: "In Stock",
     Price: 699.99,
@@ -758,7 +759,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/monitor/dell/u2422h/u2422h-01-500x500.jpg",
-    "Product Name": "Dell UltraSharp U2719D",
+    name: "Dell UltraSharp U2719D",
     Category: "Monitor",
     Status: "In Stock",
     Price: 349.99,
@@ -794,7 +795,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/monitor/benq/pd2700q/1-pd2705q-01-500x500.webp",
-    "Product Name": "BenQ EX2780Q",
+    name: "BenQ EX2780Q",
     Category: "Monitor",
     Status: "In Stock",
     Price: 399.99,
@@ -830,7 +831,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/monitor/viewsonic/vx2882-4kp/vx2882-4kp-01-500x500.jpg",
-    "Product Name": "ViewSonic VP3481",
+    name: "ViewSonic VP3481",
     Category: "Monitor",
     Status: "In Stock",
     Price: 699.99,
@@ -866,8 +867,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/keyboard/logitech/g-pro/g-pro-01-500x500.jpg",
-    "Product Name":
-      "Logitech G Pro X Mechanical Gaming Keyboard",
+    name: "Logitech G Pro X Mechanical Gaming Keyboard",
     Category: "Others",
     Status: "In Stock",
     Price: 129.99,
@@ -902,8 +902,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/keyboard/corsair/k95/k95-500x500.jpg",
-    "Product Name":
-      "Corsair K95 RGB Platinum XT Mechanical Gaming Keyboard",
+    name: "Corsair K95 RGB Platinum XT Mechanical Gaming Keyboard",
     Category: "Others",
     Status: "In Stock",
     Price: 189.99,
@@ -938,7 +937,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/mouse/razer/deathadder-v2/deathadder-v2-500x500.jpg",
-    "Product Name": "Razer DeathAdder V2 Gaming Mouse",
+    name: "Razer DeathAdder V2 Gaming Mouse",
     Category: "Others",
     Status: "In Stock",
     Price: 69.99,
@@ -973,7 +972,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/casing/nzxt/h710i/h710i-500x500.jpg",
-    "Product Name": "NZXT HUE 2 RGB Lighting Kit",
+    name: "NZXT HUE 2 RGB Lighting Kit",
     Category: "Others",
     Status: "In Stock",
     Price: 39.99,
@@ -1007,8 +1006,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/headphone/sony/wh-1000xm4/wh-1000xm4-1-500x500.jpg",
-    "Product Name":
-      "Sony WH-1000XM4 Wireless Noise-Canceling Headphones",
+    name: "Sony WH-1000XM4 Wireless Noise-Canceling Headphones",
     Category: "Others",
     Status: "In Stock",
     Price: 349.99,
@@ -1043,7 +1041,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/ups/santak/r1200/r1200-01-500x500.jpg",
-    "Product Name": "APC Back-UPS Pro 1500VA",
+    name: "APC Back-UPS Pro 1500VA",
     Category: "Others",
     Status: "In Stock",
     Price: 199.99,
@@ -1078,7 +1076,7 @@ const Data = [
   {
     Image:
       "https://www.startech.com.bd/image/cache/catalog/eset/five/eset%20home%20office%20security-500x500.jpg",
-    "Product Name": "Norton 360 Deluxe",
+    name: "Norton 360 Deluxe",
     Category: "Others",
     Status: "In Stock",
     Price: 89.99,

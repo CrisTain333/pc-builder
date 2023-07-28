@@ -14,10 +14,9 @@ const ProductCard = ({ data }) => {
             alt="product_image"
           />
         </a>
-        <div className="px-5 pb-5">
-          <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-            Apple Watch Series 7 GPS, Aluminium Case,
-            Starlight Sport
+        <div className="px-3 pb-5">
+          <h5 className="text-lg h-14 font-semibold tracking-tight text-gray-900 dark:text-white">
+            {data?.name}
           </h5>
           <div className="flex items-center mt-2.5 mb-5">
             <svg
