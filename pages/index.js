@@ -6,6 +6,7 @@ import ProductCard from "@/libs/components/ProductCard/ProductCard";
 import { componentCategories } from "@/libs/constant/categoryData";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const index = ({ data }) => {
@@ -58,15 +59,17 @@ const index = ({ data }) => {
             <div className="mt-10 grid grid-cols-12 gap-y-5 w-[90%] mx-auto ">
               {componentCategories &&
                 componentCategories.map((i, index) => (
-                  <div
+                  <Link
+                    // product/category/okok
+                    href={`/product/category/${i}`}
                     key={index}
                     className={` col-span-12 md:col-span-3 `}
-                    onClick={() => submitHandle(i)}
+                    // onClick={() => submitHandle(i)}
                   >
                     <h3 className="p-2 h-20 w-full md:w-40 flex items-center justify-center bg-white rounded-md shadow-md transition-all duration-300 mx-0 md:mx-3 cursor-pointer select-none text-black text-base ">
                       {i}
                     </h3>
-                  </div>
+                  </Link>
                 ))}
             </div>
           </div>

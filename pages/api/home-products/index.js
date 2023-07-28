@@ -5,7 +5,7 @@ export default function handler(req, res) {
       Image:
         "https://www.startech.com.bd/image/cache/catalog/processor/amd/5600x/5600x-001-500x500.jpg",
       name: "AMD Ryzen 5 5600X",
-      Category: "CPU Processor",
+      Category: "Processor",
       Status: "In Stock",
       Price: 279.99,
       Description:

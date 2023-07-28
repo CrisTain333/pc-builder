@@ -5,7 +5,7 @@ export default function handler(req, res) {
       Image:
         "https://www.startech.com.bd/image/cache/catalog/processor/amd/5600x/5600x-001-500x500.jpg",
       "Product Name": "AMD Ryzen 5 5600X",
-      Category: "CPU Processor",
+      Category: "Processor",
       Status: "In Stock",
       Price: 279.99,
       Description:
@@ -40,7 +40,7 @@ export default function handler(req, res) {
       Image:
         "https://www.startech.com.bd/image/cache/catalog/processor/Intel/i9-11900k/i9-11900k-500x500.jpg",
       "Product Name": "Intel Core i9-11900K",
-      Category: "CPU Processor",
+      Category: "Processor",
       Status: "In Stock",
       Price: 519.99,
       Description:
@@ -75,7 +75,7 @@ export default function handler(req, res) {
       Image:
         "https://www.startech.com.bd/image/cache/catalog/processor/Intel/i5-11600k/i5-11600k-500x500.jpg",
       "Product Name": "Intel Core i5-11600K",
-      Category: "CPU Processor",
+      Category: "Processor",
       Status: "In Stock",
       Price: 269.99,
       Description:
@@ -110,7 +110,7 @@ export default function handler(req, res) {
       Image:
         "https://www.startech.com.bd/image/cache/catalog/processor/amd/ryzen-7-5800x/ryzen-7-5800x-01-500x500.jpg",
       "Product Name": "AMD Ryzen 7 5800X",
-      Category: "CPU Processor",
+      Category: "Processor",
       Status: "In Stock",
       Price: 369.99,
       Description:
@@ -145,7 +145,7 @@ export default function handler(req, res) {
       Image:
         "https://www.startech.com.bd/image/cache/catalog/processor/amd/ryzen-9-5900x/ryzen-9-5900x-001-500x500.jpg",
       "Product Name": "AMD Ryzen 9 5950X",
-      Category: "CPU Processor",
+      Category: "Processor",
       Status: "In Stock",
       Price: 749.99,
       Description:

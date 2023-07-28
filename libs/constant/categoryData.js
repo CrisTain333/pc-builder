@@ -1,5 +1,5 @@
 export const componentCategories = [
-  "CPU / Processor",
+  "Processor",
   "Motherboard",
   "RAM",
   "Power Supply Unit",
