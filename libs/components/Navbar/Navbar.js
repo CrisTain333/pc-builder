@@ -59,7 +59,7 @@ const Navbar = () => {
                 label={"Build Pc"}
                 icon={<IoIosBuild size={20} />}
                 className={
-                  "flex justify-center items-center bg-gradient-to-t from-[#28afa8]  px-3 md:px-6 transition-all py-2  md:py-3 text-base rounded-sm text-white to-[#4ce5e2]"
+                  "flex justify-center items-center bg-gradient-to-t from-[#28afa8]  px-3 md:px-2 transition-all py-[9px] text-base rounded-sm text-white to-[#4ce5e2]"
                 }
                 labelClass={"ml-2"}
               />

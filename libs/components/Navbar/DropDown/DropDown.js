@@ -13,7 +13,7 @@ const DropDown = ({
   };
   return (
     <div
-      className={`pb-5 w-64 h-auto max-h-[70h] overflow-y-scroll -ml-6 backdrop-blur-sm bg-white/30 absolute z-30 rounded-b-md shadow-md duration-1000 transition-opacity 
+      className={`pb-5 w-64 h-auto max-h-[70h] overflow-y-scroll -ml-6 bg-white absolute z-30 rounded-b-md shadow-md duration-1000 transition-opacity 
       }`}
     >
       {categoriesData &&
