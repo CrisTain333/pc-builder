@@ -17,7 +17,7 @@ const data = [
       Socket: "AM4",
       TDP: "65W",
     },
-    "Individual Rating": 4.8,
+    individualRating: 4.8,
     ratings: 4.7,
     Reviews: [
       {
@@ -51,7 +51,7 @@ const data = [
       Socket: "LGA 1200",
       TDP: "125W",
     },
-    "Individual Rating": 4.9,
+    individualRating: 4.9,
     ratings: 4.8,
     Reviews: [
       {
@@ -85,7 +85,7 @@ const data = [
       Socket: "LGA 1200",
       TDP: "125W",
     },
-    "Individual Rating": 4.7,
+    individualRating: 4.7,
     ratings: 4.6,
     Reviews: [
       {
@@ -120,7 +120,7 @@ const data = [
       Socket: "AM4",
       TDP: "105W",
     },
-    "Individual Rating": 4.8,
+    individualRating: 4.8,
     ratings: 4.7,
     Reviews: [
       {
@@ -155,7 +155,7 @@ const data = [
       Socket: "AM4",
       TDP: "105W",
     },
-    "Individual Rating": 4.9,
+    individualRating: 4.9,
     ratings: 4.9,
     Reviews: [
       {
@@ -193,7 +193,7 @@ const data = [
       Storage: "M.2, SATA 6Gb/s",
       "USB Ports": "USB 3.2 Gen 2, USB 3.2 Gen 1, USB 2.0",
     },
-    "Individual Rating": 4.7,
+    individualRating: 4.7,
     ratings: 4.6,
     Reviews: [
       {
@@ -229,7 +229,7 @@ const data = [
       Storage: "M.2, SATA 6Gb/s",
       "USB Ports": "USB 3.2 Gen 2, USB 3.2 Gen 1, USB 2.0",
     },
-    "Individual Rating": 4.6,
+    individualRating: 4.6,
     ratings: 4.5,
     Reviews: [
       {
@@ -267,7 +267,7 @@ const data = [
       "USB Ports":
         "USB 3.2 Gen 2x2, USB 3.2 Gen 2, USB 3.2 Gen 1, USB 2.0",
     },
-    "Individual Rating": 4.8,
+    individualRating: 4.8,
     ratings: 4.7,
     Reviews: [
       {
@@ -304,7 +304,7 @@ const data = [
       Storage: "M.2, SATA 6Gb/s",
       "USB Ports": "USB 3.2 Gen 1, USB 2.0",
     },
-    "Individual Rating": 4.6,
+    individualRating: 4.6,
     ratings: 4.5,
     Reviews: [
       {
@@ -341,7 +341,7 @@ const data = [
       Storage: "M.2, SATA 6Gb/s",
       "USB Ports": "USB 3.2 Gen 2, USB 3.2 Gen 1, USB 2.0",
     },
-    "Individual Rating": 4.9,
+    individualRating: 4.9,
     ratings: 4.8,
     Reviews: [
       {
@@ -376,7 +376,7 @@ const data = [
       "CAS Latency": "16",
       Voltage: "1.35V",
     },
-    "Individual Rating": 4.7,
+    individualRating: 4.7,
     ratings: 4.6,
     Reviews: [
       {
@@ -413,7 +413,7 @@ const data = [
       "CAS Latency": "18",
       Voltage: "1.35V",
     },
-    "Individual Rating": 4.6,
+    individualRating: 4.6,
     ratings: 4.5,
     Reviews: [
       {
@@ -447,7 +447,7 @@ const data = [
       "CAS Latency": "18",
       Voltage: "1.35V",
     },
-    "Individual Rating": 4.8,
+    individualRating: 4.8,
     ratings: 4.7,
     Reviews: [
       {
@@ -481,7 +481,7 @@ const data = [
       Modular: "Fully Modular",
       Connectors: "ATX, EPS, PCIe, SATA, Molex",
     },
-    "Individual Rating": 4.7,
+    individualRating: 4.7,
     ratings: 4.6,
     Reviews: [
       {
@@ -515,7 +515,7 @@ const data = [
       Modular: "Fully Modular",
       Connectors: "ATX, EPS, PCIe, SATA, Molex",
     },
-    "Individual Rating": 4.8,
+    individualRating: 4.8,
     ratings: 4.7,
     Reviews: [
       {
@@ -550,7 +550,7 @@ const data = [
       Modular: "Semi-Modular",
       Connectors: "ATX, EPS, PCIe, SATA, Molex",
     },
-    "Individual Rating": 4.6,
+    individualRating: 4.6,
     ratings: 4.5,
     Reviews: [
       {
@@ -584,7 +584,7 @@ const data = [
       "Read Speed": "3500 MB/s",
       "Write Speed": "3300 MB/s",
     },
-    "Individual Rating": 4.7,
+    individualRating: 4.7,
     ratings: 4.6,
     Reviews: [
       {
@@ -618,7 +618,7 @@ const data = [
       RPM: "5400 RPM",
       Cache: "64MB",
     },
-    "Individual Rating": 4.6,
+    individualRating: 4.6,
     ratings: 4.5,
     Reviews: [
       {
@@ -652,7 +652,7 @@ const data = [
       RPM: "7200 RPM",
       Cache: "256MB",
     },
-    "Individual Rating": 4.8,
+    individualRating: 4.8,
     ratings: 4.7,
     Reviews: [
       {
@@ -688,7 +688,7 @@ const data = [
       "Response Time": "4ms",
       Connectivity: "HDMI, DisplayPort, USB 3.0",
     },
-    "Individual Rating": 4.7,
+    individualRating: 4.7,
     ratings: 4.6,
     Reviews: [
       {
@@ -725,7 +725,7 @@ const data = [
       "Response Time": "5ms",
       Connectivity: "HDMI, DisplayPort, USB-C, USB 3.0",
     },
-    "Individual Rating": 4.8,
+    individualRating: 4.8,
     ratings: 4.7,
     Reviews: [
       {
@@ -762,7 +762,7 @@ const data = [
       "Response Time": "1ms",
       Connectivity: "HDMI, DisplayPort, USB 3.0",
     },
-    "Individual Rating": 4.9,
+    individualRating: 4.9,
     ratings: 4.8,
     Reviews: [
       {
@@ -799,7 +799,7 @@ const data = [
       "Response Time": "5ms",
       Connectivity: "HDMI, DisplayPort, USB 3.0",
     },
-    "Individual Rating": 4.7,
+    individualRating: 4.7,
     ratings: 4.6,
     Reviews: [
       {
@@ -836,7 +836,7 @@ const data = [
       "Response Time": "5ms",
       Connectivity: "HDMI, DisplayPort, USB-C",
     },
-    "Individual Rating": 4.8,
+    individualRating: 4.8,
     ratings: 4.7,
     Reviews: [
       {
@@ -873,7 +873,7 @@ const data = [
       "Response Time": "5ms",
       Connectivity: "HDMI, DisplayPort, USB 3.0",
     },
-    "Individual Rating": 4.7,
+    individualRating: 4.7,
     ratings: 4.6,
     Reviews: [
       {
@@ -909,7 +909,7 @@ const data = [
       "Special Features":
         "Customizable RGB lighting, programmable macros",
     },
-    "Individual Rating": 4.7,
+    individualRating: 4.7,
     ratings: 4.6,
     Reviews: [
       {
@@ -945,7 +945,7 @@ const data = [
       "Special Features":
         "Dedicated macro keys, detachable wrist rest",
     },
-    "Individual Rating": 4.8,
+    individualRating: 4.8,
     ratings: 4.7,
     Reviews: [
       {
@@ -981,7 +981,7 @@ const data = [
       "Special Features":
         "Razer Speedflex cable, customizable RGB lighting",
     },
-    "Individual Rating": 4.7,
+    individualRating: 4.7,
     ratings: 4.6,
     Reviews: [
       {
@@ -1016,7 +1016,7 @@ const data = [
       "Special Features":
         "Addressable RGB LEDs, magnetic strips for easy installation",
     },
-    "Individual Rating": 4.6,
+    individualRating: 4.6,
     ratings: 4.5,
     Reviews: [
       {
@@ -1052,7 +1052,7 @@ const data = [
       "Special Features":
         "High-resolution audio, touch controls",
     },
-    "Individual Rating": 4.9,
+    individualRating: 4.9,
     ratings: 4.8,
     Reviews: [
       {
@@ -1088,7 +1088,7 @@ const data = [
       "Special Features":
         "Automatic voltage regulation (AVR)",
     },
-    "Individual Rating": 4.7,
+    individualRating: 4.7,
     ratings: 4.6,
     Reviews: [
       {
@@ -1124,7 +1124,7 @@ const data = [
       "Special Features":
         "Parental control, password manager",
     },
-    "Individual Rating": 4.8,
+    individualRating: 4.8,
     ratings: 4.7,
     Reviews: [
       {
