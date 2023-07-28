@@ -62,7 +62,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: true, // Set to true to enable fallback for paths not generated at build time
+    fallback: false, // Set to true to enable fallback for paths not generated at build time
   };
 }
 
@@ -72,11 +72,6 @@ export async function getStaticProps(context) {
     `${process.env.NEXT_FRONTEND_BASE_URL}/api/products/${params.id}`
   );
   const productData = await product.json();
-  if (!productData) {
-    return {
-      notFound: true,
-    };
-  }
 
   console.log(productData);
   return {

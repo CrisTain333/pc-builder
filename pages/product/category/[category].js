@@ -54,7 +54,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: true, // Set to true to enable fallback for paths not generated at build time
+    fallback: false, // Set to true to enable fallback for paths not generated at build time
   };
 }
 
