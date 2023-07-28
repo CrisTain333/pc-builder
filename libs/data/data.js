@@ -38,7 +38,7 @@ const Data = [
 
     name: "Intel Core i9-11900K",
     Category: "CPU Processor",
-    Status: "In Stock",
+    Status: "Stock Out",
     Price: 519.99,
     Description:
       "High-performance CPU for gaming and productivity.",

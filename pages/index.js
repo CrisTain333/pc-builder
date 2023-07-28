@@ -35,7 +35,7 @@ const index = ({ data }) => {
                 return (
                   <div
                     key={product?.id}
-                    className="col-span-4"
+                    className="col-span-12 md:col-span-4 "
                   >
                     <ProductCard data={product} />
                   </div>
@@ -55,7 +55,7 @@ index.getLayout = function getLayout(page) {
 };
 
 export async function getStaticProps() {
-  // Fetch data from an API or any data source
+  // Fetch data from an API
   const response = await fetch(
     `${process.env.NEXT_FRONTEND_BASE_URL}/api/home-products`
   );
@@ -66,7 +66,5 @@ export async function getStaticProps() {
     props: {
       data,
     },
-    // Revalidate the page every 10 seconds (optional)
-    revalidate: 10,
   };
 }

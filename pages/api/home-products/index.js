@@ -19,7 +19,7 @@ export default function handler(req, res) {
         TDP: "65W",
       },
       "Individual Rating": 4.8,
-      "Average Rating": 4.7,
+      ratings: 4.7,
       Reviews: [
         {
           username: "user1",
@@ -59,7 +59,7 @@ export default function handler(req, res) {
           "USB 3.2 Gen 2, USB 3.2 Gen 1, USB 2.0",
       },
       "Individual Rating": 4.7,
-      "Average Rating": 4.6,
+      ratings: 4.6,
       Reviews: [
         {
           username: "user1",
@@ -94,7 +94,7 @@ export default function handler(req, res) {
         Voltage: "1.35V",
       },
       "Individual Rating": 4.8,
-      "Average Rating": 4.7,
+      ratings: 4.7,
       Reviews: [
         {
           username: "user5",
@@ -129,7 +129,7 @@ export default function handler(req, res) {
         Connectors: "ATX, EPS, PCIe, SATA, Molex",
       },
       "Individual Rating": 4.8,
-      "Average Rating": 4.7,
+      ratings: 4.7,
       Reviews: [
         {
           username: "user3",
@@ -166,7 +166,7 @@ export default function handler(req, res) {
         Connectivity: "HDMI, DisplayPort, USB 3.0",
       },
       "Individual Rating": 4.7,
-      "Average Rating": 4.6,
+      ratings: 4.6,
       Reviews: [
         {
           username: "user1",
@@ -202,7 +202,7 @@ export default function handler(req, res) {
           "Razer Speedflex cable, customizable RGB lighting",
       },
       "Individual Rating": 4.7,
-      "Average Rating": 4.6,
+      ratings: 4.6,
       Reviews: [
         {
           username: "user5",
