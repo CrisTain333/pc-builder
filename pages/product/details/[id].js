@@ -163,27 +163,32 @@ const ProductDetailsPage = ({ product }) => {
                   </h2>
                   <div class="flex flex-col gap-4  p-4">
                     {/* <!-- Profile and Rating --> */}
-                    <div class="flex justify justify-between shadow-md p-2 rounded-md">
-                      <div class="flex items-start justify-start gap-2">
-                        <Image
-                          className=" hidden md:block h-10 w-10 rounded-full ring-2 ring-[#28afa8] p-1 "
-                          src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
-                          alt="Image Description"
-                          width={500}
-                          height={500}
-                        />
-                        <div className="ml-2">
-                          <span className="text-sm font-semibold ">
-                            Jess Hopkins
-                          </span>
-                          <div className="text-xs">
-                            Gorgeous design! Even more
-                            responsive than the previous
-                            version. A pleasure to use!
+                    {productDetails?.Reviews?.map(
+                      (review, index) => (
+                        <div
+                          class="flex justify justify-between shadow-md p-2 rounded-md"
+                          key={index}
+                        >
+                          <div class="flex items-start justify-start gap-2">
+                            <Image
+                              className=" hidden md:block h-10 w-10 rounded-full ring-2 ring-[#28afa8] p-1 "
+                              src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+                              alt="Image Description"
+                              width={500}
+                              height={500}
+                            />
+                            <div className="ml-2">
+                              <span className="text-sm font-semibold ">
+                                {review?.username}
+                              </span>
+                              <div className="text-xs">
+                                {review?.comment}
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
+                      )
+                    )}
                   </div>
                 </div>
               </div>
