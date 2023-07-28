@@ -60,13 +60,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { params } = context;
-  console.log(params);
-  //   const { category } = params;
   const Products = await fetch(
     `${process.env.NEXT_FRONTEND_BASE_URL}/api/products/category/${params.category}`
   );
   const categoryData = await Products.json();
-  console.log(categoryData);
 
   return {
     props: {
