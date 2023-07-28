@@ -55,51 +55,6 @@ const SimpleNav = () => {
                   </div>
                 </div>
               </li>
-              <li className="flex">
-                <Link
-                  rel="noopener noreferrer"
-                  href="/"
-                  className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
-                >
-                  Home
-                </Link>
-              </li>
-              {/* <li className="flex">
-                                <Link
-                                    rel="noopener noreferrer"
-                                    href="/best-deal"
-                                    className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
-                                >
-                                    Best Selling
-                                </Link>
-                            </li> */}
-              <li className="flex">
-                <Link
-                  rel="noopener noreferrer"
-                  href="/product"
-                  className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
-                >
-                  Product
-                </Link>
-              </li>
-              <li className="flex">
-                <Link
-                  rel="noopener noreferrer"
-                  href="/faq"
-                  className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
-                >
-                  FAQ
-                </Link>
-              </li>
-              <li className="flex">
-                <Link
-                  rel="noopener noreferrer"
-                  href="/contact-us"
-                  className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
-                >
-                  Contact Us
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
