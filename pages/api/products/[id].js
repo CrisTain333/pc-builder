@@ -9,7 +9,7 @@ const data = [
     Price: 279.99,
     Description:
       "Powerful CPU for gaming and content creation.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "AMD",
       Model: "Ryzen 5 5600X",
       Specification:
@@ -17,8 +17,8 @@ const data = [
       Socket: "AM4",
       TDP: "65W",
     },
-    "Individual Rating": 4.8,
-    "Average Rating": 4.7,
+    individualRating: 4.8,
+    averageRating: 4.7,
     Reviews: [
       {
         username: "user1",
@@ -43,7 +43,7 @@ const data = [
     Price: 519.99,
     Description:
       "High-performance CPU for gaming and productivity.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Intel",
       Model: "Core i9-11900K",
       Specification:
@@ -51,8 +51,8 @@ const data = [
       Socket: "LGA 1200",
       TDP: "125W",
     },
-    "Individual Rating": 4.9,
-    "Average Rating": 4.8,
+    individualRating: 4.9,
+    averageRating: 4.8,
     Reviews: [
       {
         username: "user3",
@@ -77,7 +77,7 @@ const data = [
     Status: "In Stock",
     Price: 269.99,
     Description: "Great CPU for gaming and everyday tasks.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Intel",
       Model: "Core i5-11600K",
       Specification:
@@ -85,8 +85,8 @@ const data = [
       Socket: "LGA 1200",
       TDP: "125W",
     },
-    "Individual Rating": 4.7,
-    "Average Rating": 4.6,
+    individualRating: 4.7,
+    averageRating: 4.6,
     Reviews: [
       {
         username: "user5",
@@ -112,7 +112,7 @@ const data = [
     Price: 369.99,
     Description:
       "High-performance CPU for gaming and productivity.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "AMD",
       Model: "Ryzen 7 5800X",
       Specification:
@@ -120,8 +120,8 @@ const data = [
       Socket: "AM4",
       TDP: "105W",
     },
-    "Individual Rating": 4.8,
-    "Average Rating": 4.7,
+    individualRating: 4.8,
+    averageRating: 4.7,
     Reviews: [
       {
         username: "user7",
@@ -147,7 +147,7 @@ const data = [
     Price: 749.99,
     Description:
       "Extreme-performance CPU for gaming and content creation.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "AMD",
       Model: "Ryzen 9 5950X",
       Specification:
@@ -155,8 +155,8 @@ const data = [
       Socket: "AM4",
       TDP: "105W",
     },
-    "Individual Rating": 4.9,
-    "Average Rating": 4.9,
+    individualRating: 4.9,
+    averageRating: 4.9,
     Reviews: [
       {
         username: "user9",
@@ -183,7 +183,7 @@ const data = [
     Price: 189.99,
     Description:
       "High-end gaming motherboard for AMD CPUs.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "ASUS",
       Model: "ROG Strix B550-F Gaming",
       Socket: "AM4",
@@ -193,8 +193,8 @@ const data = [
       Storage: "M.2, SATA 6Gb/s",
       "USB Ports": "USB 3.2 Gen 2, USB 3.2 Gen 1, USB 2.0",
     },
-    "Individual Rating": 4.7,
-    "Average Rating": 4.6,
+    individualRating: 4.7,
+    averageRating: 4.6,
     Reviews: [
       {
         username: "user1",
@@ -219,7 +219,7 @@ const data = [
     Price: 159.99,
     Description:
       "Mid-range motherboard for AMD Ryzen CPUs.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "GIGABYTE",
       Model: "B550 AORUS Elite",
       Socket: "AM4",
@@ -229,8 +229,8 @@ const data = [
       Storage: "M.2, SATA 6Gb/s",
       "USB Ports": "USB 3.2 Gen 2, USB 3.2 Gen 1, USB 2.0",
     },
-    "Individual Rating": 4.6,
-    "Average Rating": 4.5,
+    individualRating: 4.6,
+    averageRating: 4.5,
     Reviews: [
       {
         username: "user3",
@@ -256,7 +256,7 @@ const data = [
     Price: 249.99,
     Description:
       "High-performance gaming motherboard for Intel CPUs.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "MSI",
       Model: "MPG Z590 Gaming Edge WiFi",
       Socket: "LGA 1200",
@@ -267,8 +267,8 @@ const data = [
       "USB Ports":
         "USB 3.2 Gen 2x2, USB 3.2 Gen 2, USB 3.2 Gen 1, USB 2.0",
     },
-    "Individual Rating": 4.8,
-    "Average Rating": 4.7,
+    individualRating: 4.8,
+    averageRating: 4.7,
     Reviews: [
       {
         username: "user5",
@@ -294,7 +294,7 @@ const data = [
     Price: 109.99,
     Description:
       "Affordable and reliable motherboard for AMD CPUs.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "ASRock",
       Model: "B450M Steel Legend",
       Socket: "AM4",
@@ -304,8 +304,8 @@ const data = [
       Storage: "M.2, SATA 6Gb/s",
       "USB Ports": "USB 3.2 Gen 1, USB 2.0",
     },
-    "Individual Rating": 4.6,
-    "Average Rating": 4.5,
+    individualRating: 4.6,
+    averageRating: 4.5,
     Reviews: [
       {
         username: "user7",
@@ -331,7 +331,7 @@ const data = [
     Price: 289.99,
     Description:
       "Premium motherboard for high-end AMD Ryzen CPUs.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "ASUS",
       Model: "Prime X570-Pro",
       Socket: "AM4",
@@ -341,8 +341,8 @@ const data = [
       Storage: "M.2, SATA 6Gb/s",
       "USB Ports": "USB 3.2 Gen 2, USB 3.2 Gen 1, USB 2.0",
     },
-    "Individual Rating": 4.9,
-    "Average Rating": 4.8,
+    individualRating: 4.9,
+    averageRating: 4.8,
     Reviews: [
       {
         username: "user9",
@@ -367,7 +367,7 @@ const data = [
     Status: "In Stock",
     Price: 89.99,
     Description: "High-performance RGB RAM for gaming.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Corsair",
       Model: "Vengeance RGB Pro",
       Capacity: "16GB (2x8GB)",
@@ -376,8 +376,8 @@ const data = [
       "CAS Latency": "16",
       Voltage: "1.35V",
     },
-    "Individual Rating": 4.7,
-    "Average Rating": 4.6,
+    individualRating: 4.7,
+    averageRating: 4.6,
     Reviews: [
       {
         username: "user1",
@@ -404,7 +404,7 @@ const data = [
     Price: 79.99,
     Description:
       "Affordable and reliable RAM for everyday use.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "G.SKILL",
       Model: "Ripjaws V",
       Capacity: "32GB (2x16GB)",
@@ -413,8 +413,8 @@ const data = [
       "CAS Latency": "18",
       Voltage: "1.35V",
     },
-    "Individual Rating": 4.6,
-    "Average Rating": 4.5,
+    individualRating: 4.6,
+    averageRating: 4.5,
     Reviews: [
       {
         username: "user3",
@@ -438,7 +438,7 @@ const data = [
     Price: 129.99,
     Description:
       "High-end RAM for enthusiasts and overclockers.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Crucial",
       Model: "Ballistix MAX",
       Capacity: "64GB (4x16GB)",
@@ -447,8 +447,8 @@ const data = [
       "CAS Latency": "18",
       Voltage: "1.35V",
     },
-    "Individual Rating": 4.8,
-    "Average Rating": 4.7,
+    individualRating: 4.8,
+    averageRating: 4.7,
     Reviews: [
       {
         username: "user5",
@@ -473,7 +473,7 @@ const data = [
     Status: "In Stock",
     Price: 129.99,
     Description: "High-quality modular power supply.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "EVGA",
       Model: "SuperNOVA 750 G3",
       Wattage: "750W",
@@ -481,8 +481,8 @@ const data = [
       Modular: "Fully Modular",
       Connectors: "ATX, EPS, PCIe, SATA, Molex",
     },
-    "Individual Rating": 4.7,
-    "Average Rating": 4.6,
+    individualRating: 4.7,
+    averageRating: 4.6,
     Reviews: [
       {
         username: "user1",
@@ -507,7 +507,7 @@ const data = [
     Price: 149.99,
     Description:
       "Premium power supply with silent operation.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Corsair",
       Model: "RM850x",
       Wattage: "850W",
@@ -515,8 +515,8 @@ const data = [
       Modular: "Fully Modular",
       Connectors: "ATX, EPS, PCIe, SATA, Molex",
     },
-    "Individual Rating": 4.8,
-    "Average Rating": 4.7,
+    individualRating: 4.8,
+    averageRating: 4.7,
     Reviews: [
       {
         username: "user3",
@@ -542,7 +542,7 @@ const data = [
     Price: 109.99,
     Description:
       "Reliable power supply for mid-range systems.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Seasonic",
       Model: "Focus GX-650",
       Wattage: "650W",
@@ -550,8 +550,8 @@ const data = [
       Modular: "Semi-Modular",
       Connectors: "ATX, EPS, PCIe, SATA, Molex",
     },
-    "Individual Rating": 4.6,
-    "Average Rating": 4.5,
+    individualRating: 4.6,
+    averageRating: 4.5,
     Reviews: [
       {
         username: "user5",
@@ -576,7 +576,7 @@ const data = [
     Price: 129.99,
     Description:
       "High-speed NVMe SSD for blazing fast storage.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Samsung",
       Model: "970 EVO Plus",
       Capacity: "500GB",
@@ -584,8 +584,8 @@ const data = [
       "Read Speed": "3500 MB/s",
       "Write Speed": "3300 MB/s",
     },
-    "Individual Rating": 4.7,
-    "Average Rating": 4.6,
+    individualRating: 4.7,
+    averageRating: 4.6,
     Reviews: [
       {
         username: "user1",
@@ -610,7 +610,7 @@ const data = [
     Status: "In Stock",
     Price: 79.99,
     Description: "High-capacity HDD for mass storage.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Western Digital",
       Model: "Blue",
       Capacity: "2TB",
@@ -618,8 +618,8 @@ const data = [
       RPM: "5400 RPM",
       Cache: "64MB",
     },
-    "Individual Rating": 4.6,
-    "Average Rating": 4.5,
+    individualRating: 4.6,
+    averageRating: 4.5,
     Reviews: [
       {
         username: "user3",
@@ -644,7 +644,7 @@ const data = [
     Price: 99.99,
     Description:
       "Hybrid drive for a blend of speed and capacity.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Seagate",
       Model: "FireCuda",
       Capacity: "2TB",
@@ -652,8 +652,8 @@ const data = [
       RPM: "7200 RPM",
       Cache: "256MB",
     },
-    "Individual Rating": 4.8,
-    "Average Rating": 4.7,
+    individualRating: 4.8,
+    averageRating: 4.7,
     Reviews: [
       {
         username: "user5",
@@ -678,7 +678,7 @@ const data = [
     Status: "In Stock",
     Price: 599.99,
     Description: "High-end gaming monitor with IPS panel.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "ASUS",
       Model: "ROG Swift PG279Q",
       "Display Size": "27 inches",
@@ -688,8 +688,8 @@ const data = [
       "Response Time": "4ms",
       Connectivity: "HDMI, DisplayPort, USB 3.0",
     },
-    "Individual Rating": 4.7,
-    "Average Rating": 4.6,
+    individualRating: 4.7,
+    averageRating: 4.6,
     Reviews: [
       {
         username: "user1",
@@ -715,7 +715,7 @@ const data = [
     Price: 449.99,
     Description:
       "High-quality 4K monitor with USB-C connectivity.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "LG",
       Model: "27UK850-W",
       "Display Size": "27 inches",
@@ -725,8 +725,8 @@ const data = [
       "Response Time": "5ms",
       Connectivity: "HDMI, DisplayPort, USB-C, USB 3.0",
     },
-    "Individual Rating": 4.8,
-    "Average Rating": 4.7,
+    individualRating: 4.8,
+    averageRating: 4.7,
     Reviews: [
       {
         username: "user3",
@@ -752,7 +752,7 @@ const data = [
     Price: 699.99,
     Description:
       "High-performance gaming monitor with 4K resolution.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Acer",
       Model: "Nitro XV273K",
       "Display Size": "27 inches",
@@ -762,8 +762,8 @@ const data = [
       "Response Time": "1ms",
       Connectivity: "HDMI, DisplayPort, USB 3.0",
     },
-    "Individual Rating": 4.9,
-    "Average Rating": 4.8,
+    individualRating: 4.9,
+    averageRating: 4.8,
     Reviews: [
       {
         username: "user5",
@@ -789,7 +789,7 @@ const data = [
     Price: 349.99,
     Description:
       "Professional-grade monitor with QHD resolution.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Dell",
       Model: "UltraSharp U2719D",
       "Display Size": "27 inches",
@@ -799,8 +799,8 @@ const data = [
       "Response Time": "5ms",
       Connectivity: "HDMI, DisplayPort, USB 3.0",
     },
-    "Individual Rating": 4.7,
-    "Average Rating": 4.6,
+    individualRating: 4.7,
+    averageRating: 4.6,
     Reviews: [
       {
         username: "user7",
@@ -826,7 +826,7 @@ const data = [
     Price: 399.99,
     Description:
       "Entertainment-focused monitor with HDR and 144Hz.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "BenQ",
       Model: "EX2780Q",
       "Display Size": "27 inches",
@@ -836,8 +836,8 @@ const data = [
       "Response Time": "5ms",
       Connectivity: "HDMI, DisplayPort, USB-C",
     },
-    "Individual Rating": 4.8,
-    "Average Rating": 4.7,
+    individualRating: 4.8,
+    averageRating: 4.7,
     Reviews: [
       {
         username: "user9",
@@ -863,7 +863,7 @@ const data = [
     Price: 699.99,
     Description:
       "Ultra-wide monitor for productivity and creative work.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "ViewSonic",
       Model: "VP3481",
       "Display Size": "34 inches",
@@ -873,8 +873,8 @@ const data = [
       "Response Time": "5ms",
       Connectivity: "HDMI, DisplayPort, USB 3.0",
     },
-    "Individual Rating": 4.7,
-    "Average Rating": 4.6,
+    individualRating: 4.7,
+    averageRating: 4.6,
     Reviews: [
       {
         username: "user11",
@@ -901,7 +901,7 @@ const data = [
     Price: 129.99,
     Description:
       "High-performance mechanical gaming keyboard with customizable switches.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Logitech",
       Model: "G Pro X",
       "Switch Type": "Removable GX switches",
@@ -910,8 +910,8 @@ const data = [
       "Special Features":
         "Customizable RGB lighting, programmable macros",
     },
-    "Individual Rating": 4.7,
-    "Average Rating": 4.6,
+    individualRating: 4.7,
+    averageRating: 4.6,
     Reviews: [
       {
         username: "user1",
@@ -938,7 +938,7 @@ const data = [
     Price: 189.99,
     Description:
       "Premium mechanical gaming keyboard with dedicated macro keys.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Corsair",
       Model: "K95 RGB Platinum XT",
       "Switch Type": "Cherry MX Speed",
@@ -947,8 +947,8 @@ const data = [
       "Special Features":
         "Dedicated macro keys, detachable wrist rest",
     },
-    "Individual Rating": 4.8,
-    "Average Rating": 4.7,
+    individualRating: 4.8,
+    averageRating: 4.7,
     Reviews: [
       {
         username: "user3",
@@ -974,7 +974,7 @@ const data = [
     Price: 69.99,
     Description:
       "Ergonomic gaming mouse with high-precision optical sensor.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Razer",
       Model: "DeathAdder V2",
       "Sensor Type": "Razer Focus+ Optical",
@@ -983,8 +983,8 @@ const data = [
       "Special Features":
         "Razer Speedflex cable, customizable RGB lighting",
     },
-    "Individual Rating": 4.7,
-    "Average Rating": 4.6,
+    individualRating: 4.7,
+    averageRating: 4.6,
     Reviews: [
       {
         username: "user5",
@@ -1010,7 +1010,7 @@ const data = [
     Price: 39.99,
     Description:
       "RGB lighting kit to add vibrant colors to your PC case.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "NZXT",
       Model: "HUE 2",
       Compatibility: "PC case lighting",
@@ -1018,8 +1018,8 @@ const data = [
       "Special Features":
         "Addressable RGB LEDs, magnetic strips for easy installation",
     },
-    "Individual Rating": 4.6,
-    "Average Rating": 4.5,
+    individualRating: 4.6,
+    averageRating: 4.5,
     Reviews: [
       {
         username: "user7",
@@ -1046,7 +1046,7 @@ const data = [
     Price: 349.99,
     Description:
       "High-quality wireless headphones with noise-canceling technology.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Sony",
       Model: "WH-1000XM4",
       Type: "Over-ear",
@@ -1055,8 +1055,8 @@ const data = [
       "Special Features":
         "High-resolution audio, touch controls",
     },
-    "Individual Rating": 4.9,
-    "Average Rating": 4.8,
+    individualRating: 4.9,
+    averageRating: 4.8,
     Reviews: [
       {
         username: "user9",
@@ -1082,7 +1082,7 @@ const data = [
     Price: 199.99,
     Description:
       "Reliable UPS with battery backup for essential devices.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "APC",
       Model: "Back-UPS Pro 1500VA",
       Capacity: "1500VA",
@@ -1091,8 +1091,8 @@ const data = [
       "Special Features":
         "Automatic voltage regulation (AVR)",
     },
-    "Individual Rating": 4.7,
-    "Average Rating": 4.6,
+    individualRating: 4.7,
+    averageRating: 4.6,
     Reviews: [
       {
         username: "user11",
@@ -1119,7 +1119,7 @@ const data = [
     Price: 89.99,
     Description:
       "Comprehensive antivirus and security suite for multiple devices.",
-    "Key Features": {
+    keyFeatures: {
       Brand: "Norton",
       Model: "360 Deluxe",
       Devices: "Up to 5 devices",
@@ -1127,8 +1127,8 @@ const data = [
       "Special Features":
         "Parental control, password manager",
     },
-    "Individual Rating": 4.8,
-    "Average Rating": 4.7,
+    individualRating: 4.8,
+    averageRating: 4.7,
     Reviews: [
       {
         username: "user13",
