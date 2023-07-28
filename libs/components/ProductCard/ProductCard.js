@@ -16,9 +16,7 @@ const ProductCard = ({ data }) => {
           />
         </Link>
         <div className="px-3 pb-3">
-          <Link
-            href={`/product/category/${data?.Category}`}
-          >
+          <Link href={`/product/details/${data?.id}`}>
             <h5 className="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
               {data?.name?.slice(0, 22)} . . .
             </h5>
