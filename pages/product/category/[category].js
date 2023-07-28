@@ -4,8 +4,8 @@ import React from "react";
 
 const ProductCategory = ({ products }) => {
   const { query } = useRouter();
-  console.log(products?.length);
-  return <div>{products?.length}</div>;
+  console.log(products);
+  return <div>{products?.data?.length}</div>;
 };
 
 export default ProductCategory;
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
     "Processor",
     "Motherboard",
     "RAM",
-    "Power Supply Unit",
+    "Power Supply",
     "Storage Device",
     "Monitor",
     "Others",
@@ -35,11 +35,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { params } = context;
+  console.log(params);
   //   const { category } = params;
   const Products = await fetch(
     `${process.env.NEXT_FRONTEND_BASE_URL}/api/products/category/${params.category}`
   );
   const categoryData = await Products.json();
+  console.log(categoryData);
 
   return {
     props: {
