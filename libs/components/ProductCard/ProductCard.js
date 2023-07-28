@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ProductCard = ({ data }) => {
@@ -20,7 +21,11 @@ const ProductCard = ({ data }) => {
           </h5>
           <div className="flex justify-between items-center mt-2">
             <div className="p-1 px-2 rounded-md text-sm font-semibold bg-blue-100 text-blue-800">
-              {data?.Category}
+              <Link
+                href={`/product/category/${data?.Category}`}
+              >
+                {data?.Category}
+              </Link>
             </div>
             <span
               className={`text-sm font-semibold ${
