@@ -72,7 +72,10 @@ const SimpleNav = () => {
                     />
                     <button
                       className="px-3 py-2 text-white rounded bg-[#28afa8]"
-                      onClick={() => signOut()}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        signOut();
+                      }}
                     >
                       Logout
                     </button>

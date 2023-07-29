@@ -16,6 +16,20 @@ const PcBuildPage = () => {
     storage,
     Monitor,
   } = useSelector((state) => state.builder);
+
+  const areAllComponentsSelected = () => {
+    return (
+      Processor !== null &&
+      Motherboard !== null &&
+      RAM !== null &&
+      powerSupply !== null &&
+      storage !== null &&
+      Monitor !== null
+    );
+  };
+
+  const isBuildPCDisabled = !areAllComponentsSelected();
+  console.log(isBuildPCDisabled);
   return (
     <div>
       <div className="w-[80%] mx-auto rounded-md shadow-md">
@@ -24,7 +38,7 @@ const PcBuildPage = () => {
           <h2 className="font-semibold">
             PC Builder - Build Your Own Computer
           </h2>
-          <div className="p-5 bg-orange-200 text-base rounded-md text-orange-700 font-semibold">
+          <div className="p-3 px-10 bg-orange-200 text-base rounded-md text-orange-700 font-semibold">
             ${price}
           </div>
         </div>
@@ -227,9 +241,18 @@ const PcBuildPage = () => {
 
         {/* Footer  */}
         <div className="flex items-start justify-center py-5  w-[90%] mx-auto">
-          <button className="text-base px-5 py-2 rounded-md bg-green-300 text-green-600">
-            Build
-          </button>
+          <Button
+            className={`text-base px-5 py-2 rounded
+              
+             ${
+               isBuildPCDisabled
+                 ? "cursor-not-allowed bg-red-200 text-red-500"
+                 : "cursor-pointer bg-green-500 text-white"
+             }
+             `}
+            label={"Build"}
+            isDisabled={isBuildPCDisabled}
+          />
         </div>
       </div>
     </div>
