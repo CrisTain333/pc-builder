@@ -4,6 +4,7 @@ import { componentCategories } from "@/libs/constant/categoryData";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { toast } from "react-hot-toast";
 import { useSelector } from "react-redux";
 
 const PcBuildPage = () => {
@@ -29,7 +30,11 @@ const PcBuildPage = () => {
   };
 
   const isBuildPCDisabled = !areAllComponentsSelected();
-  console.log(isBuildPCDisabled);
+
+  const handleClick = () => {
+    toast.success("Pc Build was successfully");
+  };
+
   return (
     <div>
       <div className="w-[80%] mx-auto rounded-md shadow-md">
@@ -251,6 +256,7 @@ const PcBuildPage = () => {
              }
              `}
             label={"Build"}
+            action={handleClick}
             isDisabled={isBuildPCDisabled}
           />
         </div>
