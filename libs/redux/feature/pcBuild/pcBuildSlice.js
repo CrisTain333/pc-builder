@@ -38,7 +38,7 @@ const builderSlice = createSlice({
       state.price += action.payload.Price;
     },
 
-    clearState: () => {
+    clearState: (state) => {
       state.Processor = null;
       state.Motherboard = null;
       state.RAM = null;

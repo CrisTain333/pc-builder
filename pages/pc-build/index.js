@@ -4,12 +4,15 @@ import { componentCategories } from "@/libs/constant/categoryData";
 import { clearState } from "@/libs/redux/feature/pcBuild/pcBuildSlice";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
+import swal from "sweetalert";
 
 const PcBuildPage = () => {
   const dispatch = useDispatch();
+  const router = useRouter();
   const {
     price,
     Processor,
@@ -34,8 +37,14 @@ const PcBuildPage = () => {
   const isBuildPCDisabled = !areAllComponentsSelected();
 
   const handleClick = () => {
-    toast.success("Pc Build was successfully");
+    swal(
+      "Congratulations 😃 !",
+      "Pc Build was successfully!",
+      "success"
+    );
+    // toast.success("Pc Build was successfully");
     dispatch(clearState());
+    router.push("/");
   };
 
   return (
