@@ -1,11 +1,20 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../Button/Button";
+import { useDispatch } from "react-redux";
+import { addProcessor } from "@/libs/redux/feature/pcBuild/pcBuildSlice";
+import { useRouter } from "next/router";
 
 const ComponentsCard = ({ data, category }) => {
+  const dispatch = useDispatch();
+
+  const router = useRouter();
+
   const handleAddToBuild = (productData) => {
-    console.log(productData);
-    console.log("hello");
+    if (category === "Processor") {
+      dispatch(addProcessor(productData));
+      router.push("/pc-build");
+    }
   };
 
   return (

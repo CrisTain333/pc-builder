@@ -3,8 +3,10 @@ import Button from "@/libs/components/Button/Button";
 import { componentCategories } from "@/libs/constant/categoryData";
 import Link from "next/link";
 import React from "react";
+import { useSelector } from "react-redux";
 
 const PcBuildPage = () => {
+  const {price} = useSelector((state) => state.builder);
   return (
     <div>
       <div className="w-[80%] mx-auto rounded-md shadow-md">
@@ -14,21 +16,18 @@ const PcBuildPage = () => {
             PC Builder - Build Your Own Computer
           </h2>
           <div className="p-5 bg-orange-200 text-base rounded-md text-orange-700 font-semibold">
-            $1000
+            ${price}
           </div>
         </div>
 
         {/* Category Section  */}
         <div class="  mt-2 w-[90%] mx-auto bg-white text-black p-2">
-          {componentCategories &&
-            componentCategories.map((i, index) => (
+          <div>
+            <div className="flex items-center justify-between gap-x-3.5 my-10  py-2 text-xl border-b-2 text-gray-800">
+              <span>Processor</span>
               <Link
-                href={`/pc-builder?category=${i}`}
-                key={index}
-                className="flex items-center justify-between gap-x-3.5 my-10  py-2 text-xl border-b-2 text-gray-800"
+                href={`/pc-builder?category=${"Processor"}`}
               >
-                {i}
-
                 <Button
                   label={"Choice"}
                   type={"button"}
@@ -37,7 +36,8 @@ const PcBuildPage = () => {
                   }
                 />
               </Link>
-            ))}
+            </div>
+          </div>
         </div>
 
         {/* Footer  */}

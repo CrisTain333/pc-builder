@@ -4,20 +4,22 @@ import { createSlice } from "@reduxjs/toolkit";
 const builderSlice = createSlice({
   name: "builder",
   initialState: {
-    Processor: [],
-    Motherboard: [],
-    RAM: [],
-    powerSupply: [],
-    storage: [],
-    Monitor: [],
+    price: 0,
+    Processor: null,
+    Motherboard: null,
+    RAM: null,
+    powerSupply: null,
+    storage: null,
+    Monitor: null,
   },
   reducers: {
-    addComponent: (state, action) => {
-      const { category, component } = action.payload;
-      state[category] = [...state[category], component];
+    addProcessor: (state, action) => {
+      state.Processor = action.payload;
+      state.price += action.payload.Price;
     },
   },
 });
 
-export const { addComponent } = builderSlice.actions;
+export const { addComponent, addProcessor } =
+  builderSlice.actions;
 export default builderSlice.reducer;
