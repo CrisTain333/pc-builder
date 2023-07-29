@@ -4,7 +4,6 @@ import React from "react";
 
 const ProductDetailsPage = ({ product }) => {
   const productDetails = product?.data;
-  console.log(product);
 
   const keyFeaturesArray = Object.entries(
     productDetails?.keyFeatures

@@ -1160,11 +1160,9 @@ export default function handler(req, res) {
 
   const { category } = req.query;
   const queryCategory = category.toLocaleLowerCase();
-  console.log(queryCategory);
   const product = data.filter(
     (p) => p.Category.toLocaleLowerCase() === queryCategory
   );
-  console.log(product);
 
   if (!product) {
     return res.status(404).json({

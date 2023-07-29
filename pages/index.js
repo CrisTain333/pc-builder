@@ -10,7 +10,6 @@ import Link from "next/link";
 import React from "react";
 
 const index = ({ data }) => {
-  console.log(data);
   return (
     <>
       <Head>

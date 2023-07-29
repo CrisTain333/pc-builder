@@ -8,8 +8,6 @@ import { useSession } from "next-auth/react";
 
 const Navbar = () => {
   const { data: session } = useSession();
-  console.log(session);
-  const [isLoaged, setIsLoag] = useState(true);
   return (
     <div className="fixed top-0 w-full z-50">
       <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-2">

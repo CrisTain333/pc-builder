@@ -1,7 +1,11 @@
 import { signIn } from "next-auth/react";
+import { useRouter } from "next/router";
 import React from "react";
 
-const login = () => {
+const Login = () => {
+  const { query } = useRouter();
+  const callbackUrl =
+    query?.callbackUrl || `http://localhost:3000`;
   return (
     <div>
       <main className="w-full h-screen flex flex-col items-center justify-center px-4">
@@ -55,7 +59,7 @@ const login = () => {
                   className="w-full flex items-center justify-center gap-x-3 py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100"
                   onClick={() =>
                     signIn("github", {
-                      callbackUrl: `http://localhost:3000/`,
+                      callbackUrl,
                     })
                   }
                 >
@@ -122,4 +126,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
