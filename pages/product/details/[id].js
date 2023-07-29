@@ -205,43 +205,14 @@ ProductDetailsPage.getLayout = function getLayout(page) {
 };
 
 export async function getStaticPaths() {
-  const ids = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "11",
-    "12",
-    "13",
-    "14",
-    "15",
-    "16",
-    "17",
-    "18",
-    "19",
-    "20",
-    "21",
-    "22",
-    "23",
-    "24",
-    "25",
-    "26",
-    "27",
-    "28",
-    "29",
-    "30",
-    "31",
-    "32",
-  ];
+  const response = await fetch(
+    `https://digital-cow-hut-eta.vercel.app/api/v1/products/all-products`
+  );
 
-  const paths = ids?.map((id) => ({
-    params: { id },
+  const data = await response.json();
+
+  const paths = data?.data?.map((product) => ({
+    params: { id: product?.id },
   }));
 
   return {

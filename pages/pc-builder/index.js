@@ -16,8 +16,8 @@ const PcBuilderPage = ({ category, components }) => {
           {category}
         </h1>
 
-        <div className="mt-10 w-[90%] mx-auto ">
-          <div className="grid gap-y-5 gap-x-6 grid-cols-12 mt-10 w-[90%] mx-auto">
+        <div className="mt-10 w-[95%]  md:w-[90%] mx-auto ">
+          <div className="grid gap-y-5 gap-x-6 grid-cols-12 mt-10 w-[95%]  md:w-[90%] mx-auto">
             {components.map((component) => {
               return (
                 <div

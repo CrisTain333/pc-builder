@@ -49,9 +49,9 @@ const PcBuildPage = () => {
 
   return (
     <div>
-      <div className="w-[80%] mx-auto rounded-md shadow-md">
+      <div className="w-[90%] md:w-[80%] mx-auto rounded-md shadow-md my-5">
         {/* heading  */}
-        <div className="flex items-center justify-between border-b-2 px-10 p-3">
+        <div className="flex flex-col md:flex-row items-center justify-between border-b-2 px-10 p-3">
           <h2 className="font-semibold">
             PC Builder - Build Your Own Computer
           </h2>
