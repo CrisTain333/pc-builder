@@ -37,6 +37,16 @@ const builderSlice = createSlice({
       state.Monitor = action.payload;
       state.price += action.payload.Price;
     },
+
+    clearState: () => {
+      state.Processor = null;
+      state.Motherboard = null;
+      state.RAM = null;
+      state.powerSupply = null;
+      state.storage = null;
+      state.Monitor = null;
+      state.price = 0;
+    },
   },
 });
 
@@ -47,5 +57,6 @@ export const {
   addPowerSupply,
   addStorage,
   addMonitor,
+  clearState,
 } = builderSlice.actions;
 export default builderSlice.reducer;

@@ -1,13 +1,15 @@
 import RootLayout from "@/libs/Layout/RootLayout";
 import Button from "@/libs/components/Button/Button";
 import { componentCategories } from "@/libs/constant/categoryData";
+import { clearState } from "@/libs/redux/feature/pcBuild/pcBuildSlice";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { toast } from "react-hot-toast";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const PcBuildPage = () => {
+  const dispatch = useDispatch();
   const {
     price,
     Processor,
@@ -33,6 +35,7 @@ const PcBuildPage = () => {
 
   const handleClick = () => {
     toast.success("Pc Build was successfully");
+    dispatch(clearState());
   };
 
   return (
