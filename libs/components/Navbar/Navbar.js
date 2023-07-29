@@ -4,8 +4,11 @@ import BrandImage from "../BrandImage/BrandImage";
 import Image from "next/image";
 import Button from "../Button/Button";
 import { IoIosBuild } from "react-icons/io";
+import { useSession } from "next-auth/react";
 
 const Navbar = () => {
+  const { data: session } = useSession();
+  console.log(session);
   const [isLoaged, setIsLoag] = useState(true);
   return (
     <div className="fixed top-0 w-full z-50">
@@ -64,15 +67,6 @@ const Navbar = () => {
                 labelClass={"ml-2"}
               />
             </Link>
-            {isLoaged && (
-              <Image
-                className=" hidden md:block h-14 w-14 rounded-full ring-2 ring-[#28afa8] p-1 "
-                src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
-                alt="Image Description"
-                width={500}
-                height={500}
-              />
-            )}
 
             {/* <span className="hidden w-px h-7 bg-gray-300 md:block"></span> */}
           </div>

@@ -1,3 +1,4 @@
+import { signIn } from "next-auth/react";
 import React from "react";
 
 const login = () => {
@@ -50,7 +51,14 @@ const login = () => {
                   </svg>
                   Continue with Google
                 </button>
-                <button className="w-full flex items-center justify-center gap-x-3 py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
+                <button
+                  className="w-full flex items-center justify-center gap-x-3 py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100"
+                  onClick={() =>
+                    signIn("github", {
+                      callbackUrl: `http://localhost:3000/`,
+                    })
+                  }
+                >
                   <svg
                     className="w-5 h-5"
                     viewBox="0 0 48 48"

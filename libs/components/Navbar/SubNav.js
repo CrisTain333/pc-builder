@@ -8,9 +8,11 @@ import Link from "next/link";
 import { RxDashboard } from "react-icons/rx";
 import DropDown from "./DropDown/DropDown";
 import { componentCategories } from "@/libs/constant/categoryData";
+import { useSession } from "next-auth/react";
 
 const SimpleNav = () => {
   const [dropDown, setDropDown] = useState(false);
+  const { data: session } = useSession();
   return (
     <div>
       <header className="p-5  bg-[#1C2B35] text-white">
