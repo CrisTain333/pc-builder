@@ -61,7 +61,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const { params } = context;
   const Products = await fetch(
-    `${process.env.NEXT_FRONTEND_BASE_URL}/api/products/category/${params.category}`
+    `https://digital-cow-hut-eta.vercel.app/api/v1/products/category/${params.category}`
   );
   const categoryData = await Products.json();
 

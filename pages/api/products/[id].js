@@ -1144,7 +1144,7 @@ const data = [
 ];
 
 export default function handler(req, res) {
-  const { id } = req.query;
+  const { id } = req.params;
   const product = data.find((p) => p.id === id);
 
   if (!product) {

@@ -121,7 +121,7 @@ index.getLayout = function getLayout(page) {
 export async function getStaticProps() {
   // Fetch data from an API
   const response = await fetch(
-    `${process.env.NEXT_FRONTEND_BASE_URL}/api/home-products`
+    `https://digital-cow-hut-eta.vercel.app/api/v1/products`
   );
   const data = await response.json();
 

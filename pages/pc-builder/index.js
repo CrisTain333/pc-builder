@@ -47,7 +47,7 @@ export async function getServerSideProps(context) {
 
   console.log(category);
   const products = await fetch(
-    `http://localhost:3000/api/products/category/${category}`
+    `https://digital-cow-hut-eta.vercel.app/api/v1/products/category/${category}`
   );
 
   const productsData = await products.json();

@@ -1,6 +1,6 @@
 import { store } from "@/libs/redux/store";
 import "@/styles/globals.css";
-import("preline");
+// import("preline");
 import { Provider } from "react-redux";
 import { SessionProvider } from "next-auth/react";
 export default function App({

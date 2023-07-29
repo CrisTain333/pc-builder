@@ -212,18 +212,23 @@ export async function getStaticPaths() {
     "4",
     "5",
     "6",
-    "7,8",
+    "7",
+    "8",
     "9",
     "10",
     "11",
-    "12,13",
+    "12",
+    "13",
     "14",
-    "15,16",
+    "15",
+    "16",
     "17",
-    "18,19",
+    "18",
+    "19",
     "20",
     "21",
-    "22,23",
+    "22",
+    "23",
     "24",
     "25",
     "26",
@@ -248,7 +253,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const { params } = context;
   const product = await fetch(
-    `${process.env.NEXT_FRONTEND_BASE_URL}/api/products/${params.id}`
+    `https://digital-cow-hut-eta.vercel.app/api/v1/products/${params.id}`
   );
   const productData = await product.json();
 
