@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import SimpleNav from "../components/Navbar/SubNav";
@@ -10,6 +10,7 @@ import { signOut, useSession } from "next-auth/react";
 
 const RootLayout = ({ children }) => {
   const { data: session } = useSession();
+  const [dropDown, setDropDown] = useState(false);
   return (
     <div className="">
       <div>
@@ -25,7 +26,8 @@ const RootLayout = ({ children }) => {
                   <button
                     id="hs-dropdown-default"
                     type="button"
-                    class="hs-dropdown-toggle py-2  pl-3 pr-16 flex justify-center items-center gap-2 rounded-sm border font-medium  text-white shadow-sm align-middle transition-all text-base   border-white"
+                    class="hs-dropdown-toggle py-2  pl-3 pr-8 flex justify-center items-center gap-2 rounded-sm border font-medium  text-white shadow-sm align-middle transition-all text-base   border-white"
+                    onClick={() => setDropDown(!dropDown)}
                   >
                     <BiMenuAltLeft
                       size={30}
@@ -34,23 +36,25 @@ const RootLayout = ({ children }) => {
                     Category
                   </button>
 
-                  <div
-                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] hs-dropdown-open:opacity-100 opacity-0 w-72 hidden z-10 mt-2 min-w-[15rem] bg-white shadow-md rounded-lg p-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
-                    aria-labelledby="hs-dropdown-default"
-                  >
-                    {componentCategories &&
-                      componentCategories.map(
-                        (i, index) => (
-                          <Link
-                            href={`/product/category/${i}`}
-                            key={index}
-                            className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                          >
-                            {i}
-                          </Link>
-                        )
-                      )}
-                  </div>
+                  {dropDown ? (
+                    <div class="absolute top-11 left-0  w-40 mt-2  bg-white shadow-md rounded p-2 ">
+                      {componentCategories &&
+                        componentCategories.map(
+                          (i, index) => (
+                            <Link
+                              onClick={() =>
+                                setDropDown(!dropDown)
+                              }
+                              href={`/product/category/${i}`}
+                              key={index}
+                              className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                            >
+                              {i}
+                            </Link>
+                          )
+                        )}
+                    </div>
+                  ) : null}
                 </div>
                 <div>
                   {session?.user ? (
