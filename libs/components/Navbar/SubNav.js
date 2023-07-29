@@ -8,7 +8,8 @@ import Link from "next/link";
 import { RxDashboard } from "react-icons/rx";
 import DropDown from "./DropDown/DropDown";
 import { componentCategories } from "@/libs/constant/categoryData";
-import { useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 
 const SimpleNav = () => {
   const [dropDown, setDropDown] = useState(false);
@@ -17,7 +18,7 @@ const SimpleNav = () => {
     <div>
       <header className="p-5  bg-[#1C2B35] text-white">
         <div className="w-[90%] mx-auto">
-          <div className="container flex justify-between h-10 mx-auto  md:space-x-8">
+          <div className="container  flex justify-between h-10 mx-auto  md:space-x-8">
             <ul className="items-stretch hidden space-x-3 md:flex justify-center ">
               <li className="flex">
                 <div className="flex border-r-2 pr-2">
@@ -58,6 +59,38 @@ const SimpleNav = () => {
                 </div>
               </li>
             </ul>
+            <div className="mt-1">
+              {session?.user ? (
+                <>
+                  <div className="flex items-center justify-center space-x-4 ">
+                    <Image
+                      className="block h-12 w-12 rounded-full ring-2 ring-[#28afa8] p-1 "
+                      src={session?.user?.image}
+                      alt="Image Description"
+                      width={500}
+                      height={500}
+                    />
+                    <button
+                      className="px-3 py-2 text-white rounded bg-[#28afa8]"
+                      onClick={() => signOut()}
+                    >
+                      Logout
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <Link href={"/auth/login"}>
+                    <button
+                      className="px-5 py-2 text-white rounded bg-[#28afa8]"
+                      // onClick={() => signOut()}
+                    >
+                      Login
+                    </button>
+                  </Link>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </header>
