@@ -11,7 +11,7 @@ export const authOptions = {
     // ...add more providers here
   ],
   pages: {
-    signIn: "/auth/login",
+    signIn: "https://master-build.vercel.app/auth/login",
   },
 };
 
