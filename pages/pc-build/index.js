@@ -23,7 +23,7 @@ const PcBuildPage = () => {
           {componentCategories &&
             componentCategories.map((i, index) => (
               <Link
-                href={`/product/category/${i}`}
+                href={`/pc-builder?category=${i}`}
                 key={index}
                 className="flex items-center justify-between gap-x-3.5 my-10  py-2 text-xl border-b-2 text-gray-800"
               >
