@@ -54,7 +54,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center justify-center space-x-3">
-            <Link href="/build-pc">
+            <Link href="/pc-build">
               <Button
                 label={"Build Pc"}
                 icon={<IoIosBuild size={20} />}
