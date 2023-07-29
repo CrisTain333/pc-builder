@@ -5,7 +5,8 @@ import React from "react";
 const Login = () => {
   const { query } = useRouter();
   const callbackUrl =
-    query?.callbackUrl || `http://localhost:3000`;
+    query?.callbackUrl ||
+    `https://muster-build.vercel.app/`;
   return (
     <div>
       <main className="w-full h-screen flex flex-col items-center justify-center px-4">
