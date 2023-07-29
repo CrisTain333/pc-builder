@@ -2,7 +2,14 @@ import Image from "next/image";
 import React from "react";
 import Button from "../Button/Button";
 import { useDispatch } from "react-redux";
-import { addProcessor } from "@/libs/redux/feature/pcBuild/pcBuildSlice";
+import {
+  addMonitor,
+  addMotherboard,
+  addPowerSupply,
+  addProcessor,
+  addRam,
+  addStorage,
+} from "@/libs/redux/feature/pcBuild/pcBuildSlice";
 import { useRouter } from "next/router";
 
 const ComponentsCard = ({ data, category }) => {
@@ -13,6 +20,30 @@ const ComponentsCard = ({ data, category }) => {
   const handleAddToBuild = (productData) => {
     if (category === "Processor") {
       dispatch(addProcessor(productData));
+      router.push("/pc-build");
+    }
+
+    if (category === "Motherboard") {
+      dispatch(addMotherboard(productData));
+      router.push("/pc-build");
+    }
+
+    if (category === "RAM") {
+      dispatch(addRam(productData));
+      router.push("/pc-build");
+    }
+
+    if (category === "Power Supply") {
+      dispatch(addPowerSupply(productData));
+      router.push("/pc-build");
+    }
+
+    if (category === "Storage Device") {
+      dispatch(addStorage(productData));
+      router.push("/pc-build");
+    }
+    if (category === "Monitor") {
+      dispatch(addMonitor(productData));
       router.push("/pc-build");
     }
   };
@@ -64,7 +95,7 @@ const ComponentsCard = ({ data, category }) => {
             </div>
             <div className="flex item-center justify-between mt-3">
               <h1 className="text-gray-700 font-bold text-xl">
-                {data?.Price}
+                ${data?.Price}
               </h1>
               <Button
                 className="px-3 py-2 bg-gray-800 hover:bg-gray-600 text-white text-xs font-bold uppercase rounded"

@@ -17,9 +17,35 @@ const builderSlice = createSlice({
       state.Processor = action.payload;
       state.price += action.payload.Price;
     },
+    addMotherboard: (state, action) => {
+      state.Motherboard = action.payload;
+      state.price += action.payload.Price;
+    },
+    addRam: (state, action) => {
+      state.RAM = action.payload;
+      state.price += action.payload.Price;
+    },
+    addPowerSupply: (state, action) => {
+      state.powerSupply = action.payload;
+      state.price += action.payload.Price;
+    },
+    addStorage: (state, action) => {
+      state.storage = action.payload;
+      state.price += action.payload.Price;
+    },
+    addMonitor: (state, action) => {
+      state.Monitor = action.payload;
+      state.price += action.payload.Price;
+    },
   },
 });
 
-export const { addComponent, addProcessor } =
-  builderSlice.actions;
+export const {
+  addProcessor,
+  addMotherboard,
+  addRam,
+  addPowerSupply,
+  addStorage,
+  addMonitor,
+} = builderSlice.actions;
 export default builderSlice.reducer;

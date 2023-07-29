@@ -1,12 +1,21 @@
 import RootLayout from "@/libs/Layout/RootLayout";
 import Button from "@/libs/components/Button/Button";
 import { componentCategories } from "@/libs/constant/categoryData";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useSelector } from "react-redux";
 
 const PcBuildPage = () => {
-  const {price} = useSelector((state) => state.builder);
+  const {
+    price,
+    Processor,
+    Motherboard,
+    RAM,
+    powerSupply,
+    storage,
+    Monitor,
+  } = useSelector((state) => state.builder);
   return (
     <div>
       <div className="w-[80%] mx-auto rounded-md shadow-md">
@@ -21,22 +30,198 @@ const PcBuildPage = () => {
         </div>
 
         {/* Category Section  */}
-        <div class="  mt-2 w-[90%] mx-auto bg-white text-black p-2">
-          <div>
-            <div className="flex items-center justify-between gap-x-3.5 my-10  py-2 text-xl border-b-2 text-gray-800">
+        <div class="mt-2 w-[90%] mx-auto bg-white text-black p-2">
+          {/* Parent Container For Processor */}
+          <div className="border-b-2">
+            <div className="flex items-center justify-between gap-x-3.5  py-2 text-lg  text-gray-800">
               <span>Processor</span>
-              <Link
-                href={`/pc-builder?category=${"Processor"}`}
-              >
-                <Button
-                  label={"Choice"}
-                  type={"button"}
-                  className={
-                    "bg-gradient-to-t from-[#28afa8] to-[#4ce5e2] text-base px-5 py-2 rounded-md text-white"
-                  }
-                />
-              </Link>
+              {!Processor && (
+                <Link
+                  href={`/pc-builder?category=${"Processor"}`}
+                >
+                  <Button
+                    label={"Choice"}
+                    type={"button"}
+                    className={
+                      "bg-gradient-to-t from-[#28afa8] to-[#4ce5e2] text-base px-5 py-2 rounded-md text-white"
+                    }
+                  />
+                </Link>
+              )}
             </div>
+            {Processor && (
+              <div>
+                <div className="flex items-center justify-start gap-x-3.5 font-bold  py-2 text-sm  text-gray-800">
+                  <Image
+                    alt="_image"
+                    height={50}
+                    width={50}
+                    src={Processor.Image}
+                  />
+                  <span>{Processor?.name}</span>
+                </div>
+              </div>
+            )}
+          </div>
+          {/* Parent Container For Motherboard */}
+          <div className="border-b-2">
+            <div className="flex items-center justify-between gap-x-3.5  py-2 text-lg  text-gray-800">
+              <span>Motherboard</span>
+              {!Motherboard && (
+                <Link
+                  href={`/pc-builder?category=${"Motherboard"}`}
+                >
+                  <Button
+                    label={"Choice"}
+                    type={"button"}
+                    className={
+                      "bg-gradient-to-t from-[#28afa8] to-[#4ce5e2] text-base px-5 py-2 rounded-md text-white"
+                    }
+                  />
+                </Link>
+              )}
+            </div>
+            {Motherboard && (
+              <div>
+                <div className="flex items-center justify-start gap-x-3.5 font-bold  py-2 text-sm  text-gray-800">
+                  <Image
+                    alt="_image"
+                    height={50}
+                    width={50}
+                    src={Motherboard.Image}
+                  />
+                  <span>{Motherboard?.name}</span>
+                </div>
+              </div>
+            )}
+          </div>
+          {/* Parent Container For RAM */}
+          <div className="border-b-2">
+            <div className="flex items-center justify-between gap-x-3.5  py-2 text-lg  text-gray-800">
+              <span>RAM</span>
+              {!RAM && (
+                <Link
+                  href={`/pc-builder?category=${"RAM"}`}
+                >
+                  <Button
+                    label={"Choice"}
+                    type={"button"}
+                    className={
+                      "bg-gradient-to-t from-[#28afa8] to-[#4ce5e2] text-base px-5 py-2 rounded-md text-white"
+                    }
+                  />
+                </Link>
+              )}
+            </div>
+            {RAM && (
+              <div>
+                <div className="flex items-center justify-start gap-x-3.5 font-bold  py-2 text-sm  text-gray-800">
+                  <Image
+                    alt="_image"
+                    height={50}
+                    width={50}
+                    src={RAM.Image}
+                  />
+                  <span>{RAM?.name}</span>
+                </div>
+              </div>
+            )}
+          </div>
+          {/* Parent Container For Power Supply */}
+          <div className="border-b-2">
+            <div className="flex items-center justify-between gap-x-3.5  py-2 text-lg  text-gray-800">
+              <span>Power Supply</span>
+              {!powerSupply && (
+                <Link
+                  href={`/pc-builder?category=${"Power Supply"}`}
+                >
+                  <Button
+                    label={"Choice"}
+                    type={"button"}
+                    className={
+                      "bg-gradient-to-t from-[#28afa8] to-[#4ce5e2] text-base px-5 py-2 rounded-md text-white"
+                    }
+                  />
+                </Link>
+              )}
+            </div>
+            {powerSupply && (
+              <div>
+                <div className="flex items-center justify-start gap-x-3.5 font-bold  py-2 text-sm  text-gray-800">
+                  <Image
+                    alt="_image"
+                    height={50}
+                    width={50}
+                    src={powerSupply.Image}
+                  />
+                  <span>{powerSupply?.name}</span>
+                </div>
+              </div>
+            )}
+          </div>
+          {/* Parent Container For Storage */}
+          <div className="border-b-2">
+            <div className="flex items-center justify-between gap-x-3.5  py-2 text-lg  text-gray-800">
+              <span>Storage Device</span>
+              {!storage && (
+                <Link
+                  href={`/pc-builder?category=${"Storage Device"}`}
+                >
+                  <Button
+                    label={"Choice"}
+                    type={"button"}
+                    className={
+                      "bg-gradient-to-t from-[#28afa8] to-[#4ce5e2] text-base px-5 py-2 rounded-md text-white"
+                    }
+                  />
+                </Link>
+              )}
+            </div>
+            {storage && (
+              <div>
+                <div className="flex items-center justify-start gap-x-3.5 font-bold  py-2 text-sm  text-gray-800">
+                  <Image
+                    alt="_image"
+                    height={50}
+                    width={50}
+                    src={storage.Image}
+                  />
+                  <span>{storage?.name}</span>
+                </div>
+              </div>
+            )}
+          </div>
+          {/* Parent Container For Monitor */}
+          <div className="border-b-2">
+            <div className="flex items-center justify-between gap-x-3.5  py-2 text-lg  text-gray-800">
+              <span>Monitor</span>
+              {!Monitor && (
+                <Link
+                  href={`/pc-builder?category=${"Monitor"}`}
+                >
+                  <Button
+                    label={"Choice"}
+                    type={"button"}
+                    className={
+                      "bg-gradient-to-t from-[#28afa8] to-[#4ce5e2] text-base px-5 py-2 rounded-md text-white"
+                    }
+                  />
+                </Link>
+              )}
+            </div>
+            {Monitor && (
+              <div>
+                <div className="flex items-center justify-start gap-x-3.5 font-bold  py-2 text-sm  text-gray-800">
+                  <Image
+                    alt="_image"
+                    height={50}
+                    width={50}
+                    src={Monitor.Image}
+                  />
+                  <span>{Monitor?.name}</span>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
