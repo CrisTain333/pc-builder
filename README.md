@@ -1,38 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MasterBuild - PC Building Website
+
+## Live Website
+
+Check out the live version of MasterBuild at [https://master-build.vercel.app/](https://master-build.vercel.app/)
+
+MasterBuild is a PC building website that allows users to create their custom PC configurations. With the power of Next.js, the website offers an exceptional user experience with both Server-Side Rendering (SSR) and Static Site Generation (SSG) to achieve the best performance.
+
+## Features
+
+- **Build Your Dream PC :** MasterBuild enables users to assemble their custom PCs by selecting components from various categories, including CPU, Motherboard, RAM, Power Supply, Storage Device, and Monitor.
+
+- **Authentication with GitHub Login :** To ensure a personalized experience, MasterBuild uses NextAuth.js to provide seamless authentication via GitHub login. Only registered users can access the PC Builder page.
+
+- **SSG and SSR for Performance :** By leveraging the strengths of both SSG and SSR, MasterBuild offers blazing fast load times and optimal search engine visibility. Users can explore pre-rendered content on static pages and get real-time data on the server-rendered pages.
+
+- **Disabled Build Button:** MasterBuild takes the user experience seriously and enforces a disabled "Build PC" button until the user selects all the essential components for the build. This prevents users from proceeding without completing their configurations.
 
 ## Getting Started
 
-First, run the development server:
+To explore the website and build your custom PC, you need to sign in with your GitHub account. Once logged in, you can access the PC Builder page, where you can start selecting components for your dream PC. The "Build PC" button will automatically activate once you have selected all the required components.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js: A powerful React framework that facilitates server-side rendering and static site generation for a seamless user experience and enhanced performance.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- NextAuth.js: A complete authentication solution that integrates social logins, including GitHub, for easy and secure user registration.
