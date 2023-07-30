@@ -57,7 +57,7 @@ const Navbar = () => {
           <div className="flex items-center justify-center space-x-3">
             <Link href="/pc-build">
               <Button
-                label={"Build Pc"}
+                label={"PC Builder"}
                 icon={<IoIosBuild size={20} />}
                 className={
                   "flex justify-center items-center bg-gradient-to-t from-[#28afa8]  px-3 md:px-2 transition-all py-[9px] text-base rounded-sm text-white to-[#4ce5e2]"
