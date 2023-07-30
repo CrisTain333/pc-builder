@@ -267,7 +267,7 @@ const PcBuildPage = () => {
                  : "cursor-pointer bg-green-500 text-white"
              }
              `}
-            label={"Build"}
+            label={"Complete Build"}
             action={handleClick}
             isDisabled={isBuildPCDisabled}
           />
